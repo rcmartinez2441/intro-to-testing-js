@@ -22,10 +22,14 @@ describe ('sayhello', function () {
     it('should return a string value', function () {
        expect( typeof sayHello() ).toBe(`string`);
     });
-    it('should return the value a user input in a string', function () {
-        expect(sayHello(`Raul`)).toBe(`Hello, Raul`);
+    it(`should return 'Hello, Jane' when imputed a value`, function () {
+        expect(sayHello(`Jane`)).toBe(`Hello, Jane`);
     });
-    it('should never be undefined', function () {
-        expect(helloWorld()).not.toBe(undefined);
+    it(`should return 'Hello, Alex'`, function () {
+        expect(sayHello(`Alex`)).toBe(`Hello, Alex`);
+    });
+    it(`should return 'Hello, Pat' as well`, function () {
+        expect(sayHello(`Pat`)).toBe(`Hello, Pat`);
+
     });
 });
