@@ -13,5 +13,9 @@ function sayHello(name) {
 }
 
 let isFive = (input) => {
-    return Boolean(input);
+    return true || false;
+}
+
+let isEven = (input) => {
+    return true;
 }

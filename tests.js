@@ -58,3 +58,23 @@ describe(`isFive`, function (){
     });
 
 });
+
+//Exercise #11
+describe('isEven', function () {
+    it('should de a defined function', function () {
+       expect(typeof isEven).toBe('function');
+    });
+    it('should return a boolean no matter the input', function () {
+        expect(typeof isEven()).toBe('boolean');
+    });
+    it('should return true when passed the number 2', function () {
+        expect(isEven(2)).toBe(true);
+    });
+    it('should return true when passed -4', function () {
+        expect(isEven(-4)).toBe(true);
+    });
+    it('should return false when passed the number 3', function () {
+        expect(isEven(3)).toBe(false);
+    });
+
+});
