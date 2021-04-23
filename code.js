@@ -1,8 +1,17 @@
 // helloWorld function 
 let helloWorld = function() {
-    return "Hello, World!";
+    return `Hello, World`;
 }
 
 function sayHello(name) {
-    return `Hello, ${name}`;
+    if( (name === undefined) || (typeof name === `boolean`)) {
+        name = helloWorld();
+        return name;
+    } else {
+        return `Hello, ${name}`;
+    }
+}
+
+let isFive = (input) => {
+    return Boolean(input);
 }
