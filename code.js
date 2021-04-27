@@ -26,10 +26,8 @@ let isEven = (input) => {
     }
 }
 
-let isVowel = (value1, value2) => {
-    if (value1 === 'a' || value2 === 'a'){
-        return true;
-    } else if (value1 === 'A' || value2 === 'A') {
+let isVowel = (value1) => {
+    if (value1 === 'a' || value1 === 'A'){
         return true;
     } else {
         return false;
