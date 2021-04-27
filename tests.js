@@ -62,7 +62,7 @@ describe(`isFive`, function (){
 //Exercise #11
 describe('isEven', function () {
     it('should de a defined function', function () {
-       expect(typeof isEven).toBe('function');
+        expect(typeof isEven).toBe('function');
     });
     it('should return a boolean no matter the input', function () {
         expect(typeof isEven()).toBe('boolean');
@@ -82,8 +82,8 @@ describe('isEven', function () {
     it(`should return true when passed string '8'`, function () {
         expect(isEven('8')).toBe(true);
     });
-    it(`Should return false when passed 'Infinity'`, function (){
-       expect(isEven(Infinity)).toBe(false);
+    it(`Should return false when passed 'Infinity'`, function () {
+        expect(isEven(Infinity)).toBe(false);
     });
     it(`should return false when passed a boolean 'true' and 'false'`, function () {
         expect(isEven(true, false)).toBe(false)
@@ -91,7 +91,16 @@ describe('isEven', function () {
     it(`should return false when called without an argument`, function () {
         expect(isEven()).toBe(false);
     });
+});
 
+//Exercise #12
+describe('isVowel', function () {
+    it(`should be a defined function`, function () {
+        expect(typeof isVowel).toBe('function');
+    });
+    it(`should always return a boolean regardless of input`, function () {
+        expect( typeof isVowel() ).toBe('boolean');
+    });
 
 });
 

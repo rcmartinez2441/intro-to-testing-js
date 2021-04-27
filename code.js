@@ -23,3 +23,7 @@ let isEven = (input1, input2) => {
         return false;
     }
 }
+
+let isVowel = () => {
+    return true || false;
+}
