@@ -85,8 +85,11 @@ describe('isEven', function () {
     it(`Should return false when passed 'Infinity'`, function () {
         expect(isEven(Infinity)).toBe(false);
     });
-    it(`should return false when passed a boolean 'true' and 'false'`, function () {
-        expect(isEven(true, false)).toBe(false)
+    it(`should return false when passed a boolean 'true'`, function () {
+        expect(isEven(true)).toBe(false);
+    });
+    it(`should return false when passed a boolean 'false'`, function () {
+        expect(isEven(false)).toBe(false);
     });
     it(`should return false when called without an argument`, function () {
         expect(isEven()).toBe(false);
@@ -104,6 +107,24 @@ describe('isVowel', function () {
     it(`should return true when passed string "a" `, function () {
         expect(isVowel('a')).toBe(true);
     });
+    it('should return true when passed the string "A" ', function () {
+        expect(isVowel('A')).toBe(true);
+    });
+    it('should return false when passed "y"', function () {
+        expect(isVowel('y')).toBe(false);
+    });
+    it('should return false when passed the number 4', function () {
+        expect(isVowel(4)).toBe(false);
+    });
+    it('should return false when passed any boolean value', function () {
+        expect(isVowel(true, false)).toBe(false);
+    });
+    it('should return false when passed "banana"', function () {
+        expect(isVowel('banana')).toBe(false);
+    });
+    it('should return false if passed without any parameters', function () {
+        expect(isVowel()).toBe(false);
+    });
 
 });
-
+// adding another test and code to intro-to-testing for exercise #12

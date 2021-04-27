@@ -16,16 +16,20 @@ let isFive = (input) => {
     return true || false;
 }
 
-let isEven = (input1, input2) => {
-    if (input1 % 2 === 0){
+let isEven = (input) => {
+    if ( (typeof input === 'boolean') ){
+        return false;
+    } else if ( input % 2 === 0 ) {
         return true;
     } else {
         return false;
     }
 }
 
-let isVowel = (value) => {
-    if (value === 'a'){
+let isVowel = (value1, value2) => {
+    if (value1 === 'a' || value2 === 'a'){
+        return true;
+    } else if (value1 === 'A' || value2 === 'A') {
         return true;
     } else {
         return false;
