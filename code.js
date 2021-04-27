@@ -16,6 +16,10 @@ let isFive = (input) => {
     return true || false;
 }
 
-let isEven = (input) => {
-    return true;
+let isEven = (input1, input2) => {
+    if (input1 % 2 === 0){
+        return true;
+    } else {
+        return false;
+    }
 }

@@ -76,5 +76,22 @@ describe('isEven', function () {
     it('should return false when passed the number 3', function () {
         expect(isEven(3)).toBe(false);
     });
+    it('should return false when entered "banana"', function () {
+        expect(isEven('banana')).toBe(false);
+    });
+    it(`should return true when passed string '8'`, function () {
+        expect(isEven('8')).toBe(true);
+    });
+    it(`Should return false when passed 'Infinity'`, function (){
+       expect(isEven(Infinity)).toBe(false);
+    });
+    it(`should return false when passed a boolean 'true' and 'false'`, function () {
+        expect(isEven(true, false)).toBe(false)
+    });
+    it(`should return false when called without an argument`, function () {
+        expect(isEven()).toBe(false);
+    });
+
 
 });
+
