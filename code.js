@@ -24,6 +24,10 @@ let isEven = (input1, input2) => {
     }
 }
 
-let isVowel = () => {
-    return true || false;
+let isVowel = (value) => {
+    if (value === 'a'){
+        return true;
+    } else {
+        return false;
+    }
 }
