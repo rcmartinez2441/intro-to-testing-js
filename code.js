@@ -35,5 +35,9 @@ let isVowel = (value1) => {
 }
 
 let add = (value1, value2) => {
-    return parseInt(value1) + parseInt(value2);
+    if(!isNaN(value1) && !isNaN(value2)) {
+        return parseInt(value1) + parseInt(value2);
+    } else {
+        return NaN;
+    }
 }
