@@ -135,7 +135,15 @@ describe(`add`, function (){
     it('should be a defined function ', function () {
         expect(typeof add).toBe('function');
     });
-
+    it(`Should return 5 when passed (2) and (3)`, function (){
+       expect(add(2,3)).toBe(5);
+    });
+    it(`should return (-12) when passed (-3) and (-9)`, function () {
+        expect(add(-3,-9)).toBe(-12);
+    });
+    it('should return (11) when passed ("5") and (6)', function () {
+        expect(add('5', 6)).toBe(11);
+    });
 
 });
 

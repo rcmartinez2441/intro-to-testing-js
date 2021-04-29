@@ -35,5 +35,5 @@ let isVowel = (value1) => {
 }
 
 let add = (value1, value2) => {
-
+    return value1 + value2;
 }
