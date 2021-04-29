@@ -153,7 +153,9 @@ describe(`add`, function (){
     it('should return (NaN) when passed (2) and ("apples")', function () {
         expect(add(2,'apples')).toBeNaN();
     });
-
+    it('should return (NaN) and no arguments passed', function (){
+        expect(add()).toBeNaN()
+    });
 });
 
 
