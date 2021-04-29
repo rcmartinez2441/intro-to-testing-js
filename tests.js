@@ -128,6 +128,16 @@ describe('isVowel', function () {
     it('should return false if passed without any parameters', function () {
         expect(isVowel()).toBe(false);
     });
+});
+
+//Exercise #13
+describe(`add`, function (){
+    it('should be a defined function ', function () {
+        expect(typeof add).toBe('function');
+    });
+
 
 });
-// adding another test and code to intro-to-testing for exercise #12
+
+
+

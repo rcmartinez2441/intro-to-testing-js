@@ -33,3 +33,7 @@ let isVowel = (value1) => {
         return false;
     }
 }
+
+let add = (value1, value2) => {
+
+}
